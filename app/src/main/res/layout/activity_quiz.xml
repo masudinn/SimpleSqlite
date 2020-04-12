@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_below="@id/radioGrup"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mmedium"
+        android:text="Your Score : 0"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quest"
+        android:layout_above="@id/soal"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question : 1 of x"
+        android:textSize="20dp"
+        android:fontFamily="@font/mmedium"/>
+    <TextView
+        android:id="@+id/jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mmbold"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:paddingHorizontal="20dp"
+
+        android:layout_alignParentRight="true"
+        android:text="00:10"/>
+
+    <TextView
+        android:id="@+id/soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radioGrup"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="40dp"
+        android:textSize="20dp"
+        android:text="soal soal soal soal soal soal soalaaaaaaaaa
+                      \nsoal soal soal soal soal soal soal
+                      \nsoal soal soal soal soal soal soal" />
+
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mmedium"
+            android:textSize="20dp"
+            android:text="pilihan1"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mmedium"
+            android:textSize="20dp"
+            android:text="pilihan2"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mmedium"
+            android:textSize="20dp"
+            android:text="pilihan3"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mmedium"
+            android:textSize="20dp"
+            android:text="pilihan4"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_marginBottom="100dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm"
+        android:background="@drawable/bg_btn"
+        android:textSize="20dp"
+        android:textColor="@color/font"/>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Quizes"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/font"
+        android:textSize="40dp"
+        android:fontFamily="@font/mmbold"
+        android:id="@+id/quis"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quis"
+        android:id="@+id/img"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/iconawala"/>
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/img"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="BEGIN now"
+        android:textColor="@color/font"
+        android:fontFamily="@font/mmedium"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High score : 0"
+        android:fontFamily="@font/mmedium"
+        android:textColor="@color/font"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/hasil"/>
+</RelativeLayout>
